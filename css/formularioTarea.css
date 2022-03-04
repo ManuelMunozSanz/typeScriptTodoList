@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #f7d7ffa4;
+}
+
+i{
+    color: #5f0bb3;
+}
+
+.flexCenterCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padreCont{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* FORMULARIO TAREA */
+
+.desplegarAnadirTareas{
+    background-color: #e1c3ff;
+    width: 80px;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+.capaGris{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.formularioCont{
+    background-color: #aa7fff40;
+}
+
+
+.formularioTarea{
+    display: none;
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.7em;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea, select{
+    border: 0;
+    outline: none;
+    width: 280px;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+    
+}
+
+.field:focus{
+    border: 1.6px solid #e1c3ff;
+}
+
+.btnCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCont input{
+    background-color: #e1c3ff;
+    width: 80px;
+}
+
+.selectForm{
+    width: auto;
+}
+
+
+
+
+/* LISTAS TO-DO DOING... */
+.listas{
+    background-color: blueviolet;
+    display: flex;
+}
+
+.allTaskCont{
+    width: 400px;
+    background-color: #71ffd1;
+}
+
+.todoDoingDoneCont{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    background-color: rgb(132, 201, 247);
+}
+
+.tituloColor{
+    background-color: rgb(69 180 255);
+}
+
+.tituloDeletedColor{
+    background-color: rgb(255 64 64);
+}
+
+.tituloAllTask{
+    background-color: #3eebb3;
+}
+
+.deleteCont{
+    width: 400px;
+    background-color: rgb(255, 127, 127);
+}
+
+.allTaskCont, .todoDoingDoneCont > div, .deleteCont{
+    width: 700px;
+}
+
+.allTaskCont h1, .todoDoingDoneCont div h1, .deleteCont h1{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.allTaskCont > ul, .todoDoingDoneCont > div ul, .deleteCont > ul{
+    padding: 1px;
+}
+
+.allTaskCont > ul li, .todoDoingDoneCont > div > ul li, .deleteCont > ul li{
+    padding: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 11px;
+    background-color: gainsboro;
+}
+
+.componenteTareaLi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.componenteButtons i{
+    padding-left: 9px;
+}
+
+
+
+.priorityButtons{
+    display: flex;
+    flex-flow: column;
+    padding-right: 11px;
+}
+
+.cambiarEstadoCont{
+    background-color: #f9f9f9;
+    width: 50%;
+    margin-left: 26px;
+}
+
+.cambiarEstadoCont :nth-child(odd){
+    background-color: #cccccc4a;}
+
+.cambiarEstadoCont p{
+    padding: 1px;
+    padding-left: 8px;
+    font-size: 15px;
+}

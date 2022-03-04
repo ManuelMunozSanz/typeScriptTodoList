@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link href="./css/formularioTarea.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c25f38d031.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="capaGris" class="capaGris"></div>
+    
+
+    <button class="desplegarAnadirTareas" id="desplegarAnadirTarea">AGREGAR TAREA</button>
+
+ 
+    <div class="padreCont">
+        <div class="formularioCont">
+            <form action="" id="tareaForm" class="formularioTarea">
+                <div>
+                    <p>Tarea:</p>
+                    <input name="nomForm" type="text" class="field" required> <br />
+
+                    <p>Descripción:</p>
+                    <textarea name="descForm" class="field"></textarea> <br />
+
+                    <div class="btnCont">
+                        <select class="field selectForm" name="tareasSelect" id="tareasSelect">
+                            <option value="1">To Do</option>
+                            <option value="2">Doing</option>
+                            <option value="3">Done</option>
+                        </select>
+                        
+                        <input type="submit" value="Agregar" id="agregarBtn"> 
+                        
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div class="listas">
+            <div class="allTaskCont">
+                <div class="flexCenterCont tituloAllTask">
+                    <h1>ALL</h1>
+                </div>
+               
+
+                <ul id="allTaskUl">
+
+                </ul>
+            </div>
+
+            <div class="todoDoingDoneCont">
+                <div>
+                    <div class="flexCenterCont tituloColor">
+                        <h1>TO-DO</h1>
+                        <i id="todoDelete" class="fa-solid fa-trash-can" ></i>
+                    </div>
+
+                    <ul id="todoUl" class="lista">
+     
+
+                    </ul>
+                </div>
+                <div>
+                    <div class="flexCenterCont tituloColor">
+                        <h1>DOING</h1>
+                        <i id="doingDelete" class="fa-solid fa-trash-can"></i>
+                    </div>
+                    <ul id="doingUl">
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="flexCenterCont tituloColor">
+                        <h1>DONE</h1>
+                        <i id="doneDelete" class="fa-solid fa-trash-can"></i>
+                    </div>
+                    <ul id="doneUl">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="deleteCont">
+                <div class="flexCenterCont tituloDeletedColor">
+                    <h1>DELETED</h1>
+                </div>
+                <ul id="deletedUl">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Componente tarea lista oculta -->
+    <div style="display: none;" id="componenteTareaCont">
+        <li name="23" class="componenteTareaLi">
+            <div class="flexCenterCont">
+                <div class="priorityButtons">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <p class="nomTarea"></p>           
+            </div> 
+            
+            <div class="componenteButtons flexCenterCont">
+                <i class="fa-solid fa-right-left cambiarLista"></i>
+                <i class="fa-solid fa-xmark borrarTareaI"></i>      
+            </div>
+            
+        </li>
+        <div id="cambiarEstadoCont" >
+            <div class="cambiarEstadoCont">
+                <p class="cambiarTodo">To-do</p>
+                <p class="cambiarDoing">Doing</p>
+                <p class="cambiarDone">Done</p> 
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/jsUno.js"></script>
+</body>
+
+</html>
